@@ -1,0 +1,42 @@
+Coding Best Practices for C#
+
+1)Class and Method names should always be in Pascal Case
+	Example: GetDetails(), SetDetails()
+
+2)Arguments and Local Variables should always be in Camel Case 
+	Example: emailId, firstName etc
+
+3)Avoid the use of underscore While naming Identifiers
+	Example: public String firstName   -->correct
+		 public String first_Name  -->incorrect
+
+4)Avoid use of system data types and prefer use of predefined data types
+	Example: int empId, bool isActive  -->correct
+		 Int32 empId, Boolean isActive  -->incorrect
+
+5)Always prefix an interface with the letter I
+	Example: public interface IEmployee
+
+6)For better code indentation always align curly braces vertically
+
+7)Declare variable as close to their use
+
+8)Declare properties as private to achieve Encapsulation
+	Example: private int empId { get; set; }
+
+9)Constants should always be declared in UPPER_CASE
+	Example: public cont int MIN_AGE=18;  -->correct
+		 public cont int Min_Age=18;  -->incorrect
+
+
+
+String Formating:
+	d --> date
+	e --> exponential
+	t --> time
+	f --> float
+	p --> percentage
+	G --> decimal
+	X --> hexadecimal
+	N --> number
+	N0 --> integer number
