@@ -12,16 +12,17 @@ class Test
         }while(i<4); 
 
         //while loop
+        i=1;
         while(i<4)
         {
-            Console.WriteLine("Hello world");
+            Console.WriteLine("Hello world {0}",i);
             i++;
         }   
 
         //for loop
         for(i=1;i<4;i++)
         {
-            Console.WriteLine("Hello world");
+            Console.WriteLine("Hello world {0}",i);
         }   
 
         //infinite while loop
