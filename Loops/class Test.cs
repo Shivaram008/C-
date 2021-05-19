@@ -7,7 +7,7 @@ class Test
          //do-while loop
         do
         {
-            Console.WriteLine("Hello world");
+            Console.WriteLine("Do While Loop");
             i++;
         }while(i<4); 
 
@@ -15,7 +15,7 @@ class Test
         i=1;
         while(i<4)
         {
-            Console.WriteLine("Hello world {0}",i);
+            Console.WriteLine("While Loop {0}",i);
             i++;
         }   
 
@@ -26,18 +26,30 @@ class Test
         }   
 
         //infinite while loop
+        i=1;
         while (true)
         {
             Console.WriteLine("Infinite while loop {0}",i);
+            if(i==20)
+                break;
             i++;
         }   
 
         //infinite for loop
+        i=1;
         for(;;)
         {
             Console.WriteLine("Infinite for loop {0}",i);
+            if(i==20)
+                break;
             i++;
         }   
+
+        int[] a=new int[]{1,2,3,4,5};
+        foreach(var j in a)
+        {
+            System.Console.Write($"{j} ");
+        }
 
     }
 }
