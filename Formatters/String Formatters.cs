@@ -2,16 +2,20 @@ using System;
 using System.Globalization;
 public class StringFormatters
 {
-    public static void Main()
+    public static void Main(String[] args) 
     {
         CultureInfo cultures=new CultureInfo("en-US");
         DateTime s=new DateTime(2019,6,6);
         string output = String.Format(cultures,"{0,11:T}",DateTime.Now);
         Console.WriteLine(output);
         Console.WriteLine($"{cultures.Name}");
+        foreach(var i in args)
+        {
+            Console.WriteLine(i);
+        }
         //Console.WriteLine($"{s.CultutreInfo.Name}");
 
-        //String.Format(String,Object)
+        
         /*string s = String.Format("{0:d} At {0:t}, the temperature is {1}°C.",DateTime.Now, 20.4);
         Console.WriteLine(s);
 

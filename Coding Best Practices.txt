@@ -14,7 +14,7 @@ Coding Best Practices for C#
 	Example: int empId, bool isActive  -->correct
 		 Int32 empId, Boolean isActive  -->incorrect
 
-5)Always prefix an interface with the letter I
+5)Always prefix an interface with the I letter I
 	Example: public interface IEmployee
 
 6)For better code indentation always align curly braces vertically

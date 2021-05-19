@@ -1,0 +1,39 @@
+Arrays:
+	Single Dimensional
+	Multi Dimensional
+	Jagged Array
+Declaration:
+	int[] evenNums;  // integer array
+	string[] cities; // string array
+
+	int[] evenNums = new int[5]{ 2, 4, 6, 8, 10 }; 
+	string[] cities = new string[3]{ "Mumbai", "London", "New York" };  //Initialization while declaring
+Invalid Array Creation:
+	//must specify the size 
+	int[] evenNums = new int[]; 
+
+	//number of elements must be equal to the specified size 
+	int[] evenNums = new int[5] { 2, 4 };
+
+	//cannot use var with array initializer
+	var evenNums = { 2, 4, 6, 8, 10}; 
+Length:
+	arr.Length
+Methods:
+	BinarySearch
+	CopyTo
+	Exists
+	Find
+	FindIndex
+	FindAll  --> Returns Array of matched values
+	FindLast --> Returns Last Instance
+	FIndLastIndex
+	Reverse
+	GetLength
+	Copy
+			
+
+Enums:
+	A set of named constant values
+
+
