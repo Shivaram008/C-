@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Predicate;
 int[] a=new int[]{1,2,3,4,5};
 
 int[] b=new int[5];
@@ -9,7 +11,7 @@ foreach(var i in b)
 {
     Console.Write($"{i} ");
 }
-Console.BackgroundColor = ConsoleColor.DarkMagenta;
+
 Console.WriteLine();
 /*int ele=int.Parse(Console.ReadLine());
 var z=Array.BinarySearch(a,ele);
@@ -30,3 +32,10 @@ foreach(var i in values)
 {
     Console.Write($"{i} ");
 }
+System.Console.WriteLine();
+System.Console.WriteLine($"Min value is {values.Min()}");
+System.Console.WriteLine($"Max value is {values.Max()}");
+
+string[] names={"hello","hai"};
+//Predicate<String> z=new Predicate<string>("hai");
+System.Console.Write(Array.Exists(names,"hai"));
