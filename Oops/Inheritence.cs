@@ -22,8 +22,10 @@ namespace InheritenceEx
     {
         public static void Main()
         {
-            Class2 i = new Class2();
+            Class1 i = new Class1();
             i.A();
+            Class2 b = new Class2();
+            b.A();
         }
     }
 }
