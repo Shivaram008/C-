@@ -33,8 +33,7 @@ public class Methods
         Methods n = new Methods();
         swap(ref x,ref y);
         Console.WriteLine($"Values after swap {x} , {y}");
-        MyMethod(5);
-        MyMethod();
+        
         int[] nums = {1, 2, 3, 4, 5};
 		UpdateArray(nums);
 		foreach (var item in nums)
