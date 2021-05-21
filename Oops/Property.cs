@@ -5,7 +5,15 @@ class PropertiesDemo
     private int SAge;
     public string Name
     {
-        get;set;
+        get
+        {
+            return Name;
+        }
+        set
+        {
+            System.Console.WriteLine("hi"); 
+            Name=value;
+        }
     }
     public int Age
     {
