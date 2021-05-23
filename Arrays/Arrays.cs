@@ -4,11 +4,11 @@ using System.Linq;
 
 public class Arrays
 {
-    public static T[] Empty<T> ( a)
+    /*public static T[] Empty<T> ( a)
     {
         int[] a=new int[a.Length];
         return a;
-    }
+    }*/
     public static void Main()
     {
         int[] a=new int[]{1,2,3,4,5};
@@ -22,7 +22,8 @@ public class Arrays
         }
 
         Console.WriteLine();
-        /*int ele=int.Parse(Console.ReadLine());
+        
+        int ele=int.Parse(Console.ReadLine());
         var z=Array.BinarySearch(a,ele);
         if(z<0)
         {
@@ -30,8 +31,9 @@ public class Arrays
         }
         else{
             Console.WriteLine($"Element present at the index {z}");
-        }*/
-        int[] values = new int[50];
+        }
+        
+        /*int[] values = new int[50];
         Random rnd =new Random();
         for(int i=0;i<50;i++)
         {
@@ -46,13 +48,13 @@ public class Arrays
         System.Console.WriteLine($"Max value is {values.Max()}");
 
         /*string[] names={"hello","hai"};
-        System.Console.Write(Array.Exists(names,"hai")); */
+        System.Console.Write(Array.Exists(names,"hai"));
 
         Array.Empty(a);
         Array.Fill(a,1);
         foreach(var i in a)
         {
             Console.Write($"{i} ");
-        }
+        }*/
     }
 }
