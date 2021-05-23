@@ -7,10 +7,15 @@ class PropDemo
     {
         get{return Sname;}set{ Sname=value;}
     }
+    
+    public int ID
+    {
+        get{Return Id;}set{Id=value;}
+    }
 
     public void Display()
     {
-        System.Console.WriteLine(Sname);
+        System.Console.WriteLine($"{Sname,-10} {Id,-10}");
     }
 }
 public class Properties
@@ -19,6 +24,7 @@ public class Properties
     {
         PropDemo p =new PropDemo();
         p.Name="Hello";
+        p.Id=101;
         p.Display();     
         System.Console.WriteLine(p.Name);  
     }
