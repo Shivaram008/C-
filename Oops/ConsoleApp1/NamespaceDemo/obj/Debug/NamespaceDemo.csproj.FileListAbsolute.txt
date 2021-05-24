@@ -1,0 +1,11 @@
+C:\Users\Ram Cheruku\source\repos\ConsoleApp1\NamespaceDemo\obj\Debug\NamespaceDemo.csprojAssemblyReference.cache
+C:\Users\Ram Cheruku\source\repos\ConsoleApp1\NamespaceDemo\obj\Debug\NamespaceDemo.csproj.CoreCompileInputs.cache
+C:\Users\Ram Cheruku\source\repos\ConsoleApp1\NamespaceDemo\bin\Debug\NamespaceDemo.exe.config
+C:\Users\Ram Cheruku\source\repos\ConsoleApp1\NamespaceDemo\bin\Debug\NamespaceDemo.exe
+C:\Users\Ram Cheruku\source\repos\ConsoleApp1\NamespaceDemo\bin\Debug\NamespaceDemo.pdb
+C:\Users\Ram Cheruku\source\repos\ConsoleApp1\NamespaceDemo\bin\Debug\ConsoleApp1.exe
+C:\Users\Ram Cheruku\source\repos\ConsoleApp1\NamespaceDemo\bin\Debug\ConsoleApp1.pdb
+C:\Users\Ram Cheruku\source\repos\ConsoleApp1\NamespaceDemo\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Ram Cheruku\source\repos\ConsoleApp1\NamespaceDemo\obj\Debug\NamespaceDemo.csproj.CopyComplete
+C:\Users\Ram Cheruku\source\repos\ConsoleApp1\NamespaceDemo\obj\Debug\NamespaceDemo.exe
+C:\Users\Ram Cheruku\source\repos\ConsoleApp1\NamespaceDemo\obj\Debug\NamespaceDemo.pdb
