@@ -7,7 +7,7 @@ class EncapDemo
     {
         get
         {
-            return Name;
+            return SName;
         }
         set
         {

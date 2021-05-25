@@ -11,11 +11,13 @@ public class Arrays
     }*/
     public static void Main()
     {
-        int[] a=new int[]{1,2,3,4,5};
+        int[] a=new int[]{10,11,12,13,14,15,16};
 
         int[] b=new int[5];
 
         Array.Copy(a,b,5);
+        b[0]=2;
+        Array.Fill(a,2,3,2);
         foreach(var i in b)
         {
             Console.Write($"{i} ");
@@ -23,7 +25,7 @@ public class Arrays
 
         Console.WriteLine();
         
-        int ele=int.Parse(Console.ReadLine());
+        /*int ele=int.Parse(Console.ReadLine());
         var z=Array.BinarySearch(a,ele);
         if(z<0)
         {

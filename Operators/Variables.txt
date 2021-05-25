@@ -1,0 +1,24 @@
+Non-static  or Instance
+static		//can be modified
+constants	//can not modified and initialized while declaration
+readonly	//can not modified once initialized and we can declare first and initialized later in constructors etc.,
+
+
+if a variable is explicitly declared by using the static modifier or else if it is declared in a 
+static block is said to be a static variable.
+
+In the life cycle of a class a static variable is initialized one and only one time, and instance
+variable is initialized 0 times if no instances are created and N times if N instances are created.
+
+Instance variables can be initialized through constructors also.
+
+
+If a variable is declared by using const we call it as a constant variable. These can not be modified
+after their declaration. 
+
+static variable can be modified but constants can not be modified.
+
+Readonly variable behaviour is similar to non-static variables.
+
+Constant variable is a fixed value for the whole class where as readonly variable is a fixed value
+specific to an instance of class.
