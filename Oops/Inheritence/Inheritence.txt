@@ -1,0 +1,21 @@
+Inheritence :
+-Its a mechanism of consuming the members of one class in another class by establishing parent/child relationship between classes. 
+
+Provides Reusability
+
+Child class can consume members of its parent class except private members of parent.
+
+
+1.Parent class constructor must be accesible to child class
+
+2.In inheritence child class can access parent class members but not vice-versa.
+
+3.We can initialize a parent class variables by using child class instance to make it as a reference.
+
+4.Every class is inherited from Object class of System namespace
+
+5.C# doesnt support multiple inheritence through classes
+
+6.Child class can implicitly call parent class constructor only when it is parameter less unless we need to call the base class explicitly.
+
+ 
