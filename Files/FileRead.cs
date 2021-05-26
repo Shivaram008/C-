@@ -18,7 +18,7 @@ namespace FileReading_SR
                     Console.WriteLine(str);  
                     str = sr.ReadLine();  
                 }  
-                 
+                Console.ReadLine();
                 sr.Close();  
                 fs.Close();  
             }  
