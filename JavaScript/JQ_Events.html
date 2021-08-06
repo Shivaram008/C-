@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <Title>JQuery Events</Title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="jqueryUI/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryUI/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryUI/jquery-ui.theme.css">
+    </head>
+    <body>
+        <div id="div1">
+            <h1>Welcome</h1>
+            <button type="button" id="btn1"><img id="img1" src="download.png" style="width:200;"></button>
+        </div>
+        <button id="btn2" type="button" >Toggle class</button>
+        <input id="txt1" type="text" placeholder="Enter date">
+    </body>
+    <script src="jquery.js"></script>
+    <script src="jqueryUI/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#txt1').datepicker({
+                minDate:new Date(1999,0,1),
+                maxDate:new Date(2021,11,31),
+                changeYear:true,
+                changeMonth:true,
+                showOtherMonths:true
+            })
+            $("#btn2").click(function(){
+                $("#div1").toggleClass("container");
+            })
+            $("#btn1").hover(fn1,fn2);
+            function fn1()
+            {
+                $("#img1").fadeIn();
+            }
+            function fn2()
+            {
+                $("#img1").fadeOut();
+            }
+        })
+    </script>
+</html>

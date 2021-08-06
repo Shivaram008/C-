@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Resizable - Textarea</title>
+  <link rel="stylesheet" href="jqueryUI/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .ui-resizable-se {
+    bottom: 17px;
+   
+  }
+  .se{
+    border-color: rgb(35, 192, 240);
+  }
+  </style>
+  <script src="jquery.js"></script>
+  <script src="jqueryUI/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#resizable" ).resizable({
+        grid: 50,
+        ghost:true
+        
+      
+    });
+  } );
+  </script>
+</head>
+<body>
+ 
+<textarea class="se" id="resizable" rows="5" cols="20"></textarea>
+ 
+ 
+</body>
+</html>

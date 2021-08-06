@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Timing Functions</title>
+        <script>
+            var seconds=0;
+            var opacity=0;
+            var intervalId=0;
+            function myFunction()
+            {
+                document.getElementById("lbl1").innerHTML=seconds+" Seconds";
+                seconds++;
+            }
+            function start()
+            {
+                ID=window.setInterval(myFunction,1000);
+            }
+            function stop()
+            {
+                window.seconds=0;
+                window.clearInterval(ID);
+            }
+            function fadeout()
+            {
+                clearInterval(intervalId);
+                intervalId=setInterval(hide,200);
+            }
+            function fadein()
+            {
+                clearInterval(intervalId);
+                intervalId=setInterval(show,200);
+            }
+            function hide()
+            {
+                var img=document.getElementById("img1");
+                opacity=Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+                if(opacity>0)
+                {
+                    opacity=opacity-0.1;
+                    img.style.opacity=opacity;
+                }
+                else
+                {
+                    clearInterval(intervalId);
+                }
+            }
+            function show()
+            {
+                var img=document.getElementById("img1");
+                opacity=Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+                if(opacity<1)
+                {
+                    
+                    opacity=opacity+0.1;
+                    img.style.opacity=opacity;
+                }
+                else
+                {
+                    clearInterval(intervalId);
+                }
+            }
+        </script>
+        <style>
+            .container{
+               background-color: brown;
+            }
+            .left{
+                width: 30%;
+                height: 200;
+                float:left;
+            }
+            .Right{
+                align-items: center;
+                background-color:burlywood;
+                width:auto;
+                height:200;
+                float: "left";
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <div class="container">
+            <button type="button" onclick="start()">start</button><br>
+            <h1><label id="lbl1">Start Timer</label></h1>
+            <button type="button" onclick="stop()">stop</button><br>
+        </div>
+        <div class="container left">
+
+        </div>
+        <div class="container Right" style="align-content: center;">
+            <center><button type="button" value="Fade out" onclick="fadeout()">Fade Out</button><br>
+            <img src="download.png" id="img1" alt="logo"><br>
+            <button type="button" value="Fade out" onclick="fadein()">Fade In</button><br></center>
+            <button type="button" id="btn1" onclick="fn1()">Click Me</button>
+        </div>
+    </div>
+    </body>
+    <script src="jquery.js"></script>
+    <script>
+        function fn1()
+        {
+            $("#img1").fadeToggle();
+        }
+    </script>
+</html>

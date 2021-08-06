@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Buttons Example</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="jqueryUI/jquery-ui.css">
+        <link rel="stylesheet" href="JS/css/bootstrap.css">
+        <!--<link rel="stylesheet" href="JS/css/bootstrap.css">-->
+        
+    </head>
+    <body>
+        <form>
+            <div class="container container-middle" >
+                Enter Name : <input class="form-control" type="text" id="txt1" placeholder="Enter your name"><br>
+                Enter Email : <input class="form-control" type="text" id="txt2" placeholder="Enter your email"><br>
+                Age : <input class="form-control" type="text" id="txt3" placeholder="Enter your age"><br>
+                Year Of Graduation :<input class="form-control" id="date1" placeholder="Year of passing">
+                <button type="submit" id="btn1" class="btn btn-primary ">submit</button>
+            </div>
+            <div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                      First checkbox
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                      Second checkbox
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                      Third checkbox
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                      Fourth checkbox
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                      Fifth checkbox
+                    </li>
+                  </ul>
+            </div>
+        </form>
+    </body>
+    <script src="jquery.js"></script>
+    <script src="jqueryUI/jquery-ui.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function()
+                {
+                    alert("Form Submited");
+                })
+                $("#date1").datepicker({
+                    numberOfMonths:1,
+                    showOtherMonths:true});
+            })
+                
+            
+        </script>
+</html>

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 public class Program
 {
-    public static void Display<T>(Dictionary<> d)
+    public static void Display<T1,T2>(Dictionary<T1,T2> d)
     {
         foreach(var i in d)
         {
@@ -20,9 +20,11 @@ public class Program
         b.Add(5,7);
         b.Add(2,4);
         b.Add(1,2);
-        Display(d);
-        //Display(b);
-        System.Console.WriteLine(d.Count);
+        Display<int,string>(d);
+        Display<int,int>(b);
+        
+        
+        /*System.Console.WriteLine(d.Count);
         string value="";
         //System.Console.WriteLine(d.TryGetValue(1,out value));
         System.Console.WriteLine(value);
@@ -31,7 +33,7 @@ public class Program
         ICollection<int> a=b.Keys;   
         System.Console.WriteLine(a.GetType());
         foreach(var i in a)
-            System.Console.WriteLine(i);
+            System.Console.WriteLine(i);*/
     }
     
 }

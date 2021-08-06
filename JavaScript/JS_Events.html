@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Java Script Events</title>
+        <script>
+            
+            var width=300;
+            var ID=0;
+            function increase()
+            {
+                if(width<300)
+                {
+                    width=width+2;
+                    document.getElementById("img1").style.width=width;
+                }
+                else{
+                    window.clearInterval(ID);
+                }
+            }
+            function enter()
+            {
+                window.clearInterval(ID);
+                ID=setInterval(increase,20);
+            }
+            function decrease()
+            {
+                if(width>200)
+                {
+                    width=width-2;
+                    document.getElementById("img1").style.width=width;
+                }
+                else{
+                    window.clearInterval(ID);
+                }
+            }
+            function leave()
+            {
+                window.clearInterval(ID);
+                ID=setInterval(decrease,20);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Welcome</h1>
+        <br>
+        <button type="button" id="btn1" onmouseenter="enter()" onmouseleave="leave()" style="tab-size: 5px;"><img id="img1" src="download.png" style="width: 200;" alt="Logo"></button>
+    </body>
+</html>
